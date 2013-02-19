@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<project name="TestingRandomString" default="generateRandomString">
+
+    <taskdef name="randomString" classname="src.PlatinumPixs.RandomString.GenerateTask" />
+
+    <target name="generateRandomString">
+        <randomString name="testingRandomString" length="8" stringType="uppercase_numeric" />
+    </target>
+
+</project>
