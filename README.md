@@ -8,7 +8,7 @@ Simple php class to generate a random number for a phing build.
 
 <project name="TestingRandomString" default="generateRandomString">
 
-    <taskdef name="randomString" classname="vendor.PlatinumPixs.RandomString.GenerateTask" />
+    <taskdef name="randomString" classname="src.PlatinumPixs.RandomString.GenerateTask" />
 
     <target name="generateRandomString">
         <randomString name="variableName" length="8" stringType="uppercase_numeric" />
@@ -49,3 +49,19 @@ Simple php class to generate a random number for a phing build.
         </td>
     </tr>
 </table>
+
+## Installing via Composer
+
+```json
+    {
+        "require": {
+            "platinumpixs/phing-random-string": "dev-master"
+        }
+    }
+```
+
+If installed via composer the name for the taskdef will be.
+
+```xml
+    <taskdef name="randomString" classname="vendor.platinumpixs.phing-random-string.src.PlatinumPixs.RandomString.GenerateTask" />
+```
